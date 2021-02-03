@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  
   final TextStyle estiloTexto = TextStyle(fontSize: 25.0);
 
   // build snipets
@@ -20,9 +19,19 @@ class HomePage extends StatelessWidget {
           // Text('Numero de clicks', style: TextStyle(fontSize: 25.0)),
           // Text('0',style: TextStyle(fontSize: 25.0)),
           Text('Numero de clicks', style: estiloTexto),
-          Text('0',style: estiloTexto),
+          Text('0', style: estiloTexto),
         ],
       )),
+      floatingActionButton: FloatingActionButton(
+        // child: Text('+'),
+        child: Icon(Icons.add_box_rounded),
+
+        // onPressed: null,
+        // onPressed: () {},
+        onPressed: () {
+          print('Click');
+        },
+      ),
     );
   }
 }
