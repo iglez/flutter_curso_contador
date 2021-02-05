@@ -1,7 +1,10 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
   final TextStyle estiloTexto = TextStyle(fontSize: 25.0);
+
+  final int conteo = 10;
 
   // build snipets
   @override
@@ -16,13 +19,12 @@ class HomePage extends StatelessWidget {
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          // Text('Numero de clicks', style: TextStyle(fontSize: 25.0)),
-          // Text('0',style: TextStyle(fontSize: 25.0)),
           Text('Numero de clicks', style: estiloTexto),
-          Text('0', style: estiloTexto),
+          // Text(conteo.toString(), style: estiloTexto),
+          Text('$conteo', style: estiloTexto),
         ],
       )),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      // floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         // child: Text('+'),
         child: Icon(Icons.add_box_rounded),
@@ -31,6 +33,9 @@ class HomePage extends StatelessWidget {
         // onPressed: () {},
         onPressed: () {
           print('Click');
+          
+          // OOPS
+          // conteo++;
         },
       ),
     );
