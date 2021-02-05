@@ -22,6 +22,7 @@ class HomePage extends StatelessWidget {
           Text('0', style: estiloTexto),
         ],
       )),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         // child: Text('+'),
         child: Icon(Icons.add_box_rounded),
