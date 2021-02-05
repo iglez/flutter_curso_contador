@@ -2,15 +2,16 @@
 
 A new Flutter project.
 
-## Getting Started
+## Notas
 
-This project is a starting point for a Flutter application.
+Avance de proyecto de curso Flutter Introduccion en contador.
 
-A few resources to get you started if this is your first Flutter project:
+Recordando que NO estan folders de android/ios
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Para generarlos en terminar en la raiz del proyecto pueden correr:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+`flutter create .`
+
+(OJO con el punto que se encuentra al final)
+
+Pueden explorar los branchs, incluso compararlos para que vallan avanzando paso por paso.
