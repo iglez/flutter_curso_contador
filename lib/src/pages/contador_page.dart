@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 // statefull widget
 class ContadorPage extends StatefulWidget {
-  
   @override
   // createState() {
   //   return _ContadorPageState();
@@ -12,7 +11,6 @@ class ContadorPage extends StatefulWidget {
 
 // Estado
 class _ContadorPageState extends State<ContadorPage> {
-
   final TextStyle _estiloTexto = TextStyle(fontSize: 25.0);
   int _conteo = 0;
 
@@ -33,22 +31,22 @@ class _ContadorPageState extends State<ContadorPage> {
           Text('$_conteo', style: _estiloTexto),
         ],
       )),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add_box_rounded),
-        onPressed: () {
-          // print('Click');
-          // _conteo++;
+      floatingActionButton: _crearBotones(),
+    );
+  }
 
-          // setState(() {
-
-          // });
-
-          setState(() {
-            _conteo++;
-          });
-
-        },
-      ),
+  Widget _crearBotones() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.end,
+      children: [
+        SizedBox(width: 30.0,),
+        FloatingActionButton(onPressed: null, child: Icon(Icons.exposure_zero)),
+        // SizedBox(width: 5.0,),
+        Expanded(child: SizedBox()),
+        FloatingActionButton(onPressed: null, child: Icon(Icons.remove)),
+        SizedBox(width: 5.0,),
+        FloatingActionButton(onPressed: null, child: Icon(Icons.add)),
+      ]
     );
   }
 }
